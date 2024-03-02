@@ -83,7 +83,7 @@ st.pyplot(plt)
 st.subheader('Season Demographics')
 total_bikers = daily_bikers_df['count'].sum()
 
-st.metric("Total bikers", value=total_bikers)
+st.metric("Total Cyclists", value=total_bikers)
 
 plt.figure(figsize=(10,5)) 
 plt.bar(season_df['season'],season_df['count'])
