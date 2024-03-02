@@ -59,7 +59,7 @@ season_df = create_season_df(df)
 
 st.header('Bike Sharing Dashboard')
 
-st.subheader('Monthly Bikers')
+st.subheader('Monthly Cyclists')
 
 plt.figure(figsize=(10,5)) 
 plt.plot(daily_bikers_df['datetime'],daily_bikers_df['count'])
@@ -70,7 +70,7 @@ st.subheader('By Weather')
 
 plt.figure(figsize=(10,5)) 
 plt.bar(weather_sit_df['weather_situation'],weather_sit_df['count'])
-plt.title("Best Weather for Ride")
+plt.title("Best Weather for Cycling")
 st.pyplot(plt)
 
 st.subheader('Hourly Demographics')
@@ -87,7 +87,7 @@ st.metric("Total bikers", value=total_bikers)
 
 plt.figure(figsize=(10,5)) 
 plt.bar(season_df['season'],season_df['count'])
-plt.title("Best Season for a ride")
+plt.title("Best Season for a Cycling")
 st.pyplot(plt)
 
 st.caption('(C) Humaidi Fikri 2024')
